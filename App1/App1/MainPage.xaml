@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="App1.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1" />
+            <RowDefinition Height="1" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Entry AutomationId="InputText"
+               Grid.Row="1"
+               SelectionLength="10"/>
+
+        <forms:SignaturePadView
+            Grid.Row="5"
+            BackgroundColor="White" 
+            StrokeColor="Black" />
+    </Grid>
+    
+    
+    <!--<Grid>
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+        <Entry AutomationId="InputText"
+               Text="Test"
+               AbsoluteLayout.LayoutBounds="5"
+               Margin="10,0,10,0"
+               SelectionLength="10"/>
+        
+        
+
+
+        <forms:SignaturePadView
+            BackgroundColor="White" 
+            WidthRequest="250" 
+            HeightRequest="350" 
+            StrokeColor="Black" 
+            StrokeWidth="3" />
+
+        <Button Text="Valider"
+                WidthRequest="35"
+                HeightRequest="100"/>
+
+        
+    </Grid> -->
+
+</ContentPage>
